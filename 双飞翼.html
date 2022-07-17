@@ -19,14 +19,17 @@
     #left {
       background-color: aquamarine;
       width: 300px;
+      /* 移动至中心区左重合处 */
       margin-left: -100%;
     }
     #right {
       background-color: lightblue;
       width: 200px;
+      /* 填补右边的空白区 */
       margin-left: -200px;
     }
     .column {
+      /* 左中右脱离文档流使之重合 */
       float: left;
       height: 200px;
     }

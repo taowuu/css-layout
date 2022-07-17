@@ -5,13 +5,14 @@
   <title></title>
   <style>
     div {
+      /* 文本居中 */
       text-align: center;
     }
     #header {
       background-color: aqua;
     }
     #content {
-      /* 内容区留出空间 */
+      /* 内容区留出左右空间 */
       padding-left: 300px;
       padding-right: 200px;
     }
@@ -23,17 +24,19 @@
       background-color: aquamarine;
       width: 300px;
       position: relative;
+      /* 移动至中心区左重合处 */
       margin-left: -100%;
+      /* 填补左边的空白区 */
       right: 300px;
     }
     #content #right {
       background-color: lightblue;
       width: 200px;
-      position: relative;
+      /* 填补右边的空白区 */
       margin-right: -200px;
-      /* left: 200px; */
     }
     #content .column {
+      /* 左中右脱离文档流使之重合 */
       float: left;
       height: 200px;
     }
