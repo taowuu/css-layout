@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .box {
+      height: 100px;
+      border: 1px solid red;
+      margin: 30px 0;
+    }
+    /* inline */
+    .box-1 {
+      text-align: center;
+    }
+    /* block */
+    .box-2 .item {
+      width: 50px;
+      height: 30px;
+      background-color: red;
+      /* 左右自适应 */
+      margin: 0 auto;
+    }
+    /* translate */
+    .box-3 .item {
+      width: 50px;
+      height: 30px;
+      background-color: red;
+      position: absolute;
+      left: 50%;
+      /* 向上偏移自身宽度的一半 */
+      transform: translate(-50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>水平居中</h1>
+  <div class="box box-1">
+    <span>inline</span>
+  </div>
+  <div class="box box-2">
+    <div class="item"></div>
+  </div>
+  <div class="box box-3">
+    <div class="item"></div>
+  </div>
+</body>
+</html>

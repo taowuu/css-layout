@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    div {
+      text-align: center;
+    }
+    #header {
+      background-color: aqua;
+    }
+    #content {
+      /* 内容区留出空间 */
+      padding-left: 300px;
+      padding-right: 200px;
+    }
+    #content #center {
+      background-color: orange;
+      width: 100%;
+    }
+    #content #left {
+      background-color: aquamarine;
+      width: 300px;
+      position: relative;
+      margin-left: -100%;
+      right: 300px;
+    }
+    #content #right {
+      background-color: lightblue;
+      width: 200px;
+      position: relative;
+      margin-right: -200px;
+      /* left: 200px; */
+    }
+    #content .column {
+      float: left;
+      height: 200px;
+    }
+    #footer {
+      background-color: aqua;
+      /* 清除浮动，不要上浮 */
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h1>圣杯</h1>
+  <div id="header">header</div>
+  <div id="content">
+    <div id="center" class="column">center</div>
+    <div id="left" class="column">left</div>
+    <div id="right" class="column">right</div>
+  </div>
+  <div id="footer">footer</div>
+</body>
+</html>
